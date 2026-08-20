@@ -1,0 +1,65 @@
+nav {
+    background-color: #d32f2f;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 18px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+nav a:hover {
+    background-color: #f4511e;
+}
+
+/* Submenu */
+nav li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: #d32f2f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Mostra o submenu */
+nav li:hover > ul {
+    display: block;
+}
+
+/* Itens do submenu */
+nav li > ul li {
+    width: 100%;
+}
+
+nav li > ul a {
+    padding: 14px 18px;
+    white-space: nowrap;
+}
+
+/* Hover do submenu */
+nav li > ul a:hover {
+    background-color: #f4511e;
+}

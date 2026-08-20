@@ -1,6 +1,8 @@
 import Header from "./Components/Header";
 import Banner from "./Components/Banner";
 import Cards from "./Components/Cards";
+import Footer from "./Components/Footer";
+import Menu from "./Components/Menu";
 import "./Global.css";
 
 function App() {
@@ -9,11 +11,16 @@ function App() {
 
     <div className="container">
       
-      <Header />
+      <Header titleHeader="🍕 Bem-vindo à OpenPizzaria!"
+      textHeader="Sabores irresistíveis, ingredientes selecionados e aquela pizza quentinha feita especialmente para você!" />
+      
+      <Menu />
 
       <Banner />
 
       <Cards />
+
+      <Footer titleFooter="OpenPizzaria - Todos os direitos reservados 2026" />
       
     </div>
   )

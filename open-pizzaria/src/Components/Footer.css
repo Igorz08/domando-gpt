@@ -1,0 +1,14 @@
+.footer {
+    background: linear-gradient(135deg, #d32f2f, #f4511e);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.footer h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
