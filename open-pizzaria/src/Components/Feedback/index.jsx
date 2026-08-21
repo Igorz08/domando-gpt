@@ -51,7 +51,7 @@ const Feedback = () => {
     return (
         <section className="feedBack">
             {feedbacks.map((feedback) =>
-                <article className="contentBack">
+                <article className="contentBack" key={feedback.id}>
 
                     <img 
                     src={feedback.imagem}
