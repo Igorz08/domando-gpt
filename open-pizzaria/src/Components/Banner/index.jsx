@@ -8,6 +8,7 @@ const Banner = () => {
             alt="Banner da OpenPizzaria"
             width="1000"
             height="300"
+            
             />
         </section>
     )
