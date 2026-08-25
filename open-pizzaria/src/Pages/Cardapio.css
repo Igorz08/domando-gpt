@@ -1,108 +1,161 @@
+/* Reset básico */
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff8f0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff8f3;
     color: #333;
 }
 
-/* header {
-    background-color: #d32f2f;
-    color: white;
-    text-align: center;
-    padding: 30px;
-} */
-
-header h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-header p {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-main {
-    width: 80%;
+/* Container principal */
+.cardapio {
+    width: 90%;
     max-width: 900px;
     margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-h2 {
-    color: #d32f2f;
-    border-bottom: 3px solid #e65100;
-    padding-bottom: 8px;
+/* Títulos das categorias */
+.cardapio h2 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    color: white;
+    background: linear-gradient(90deg, #d32f2f, #f4511e);
+    border-radius: 10px;
+    font-size: 24px;
 }
 
-h3 {
-    color: #e65100;
+/* Nome da pizza */
+.cardapio h3 {
+    margin-top: 22px;
     margin-bottom: 5px;
+    color: #d32f2f;
+    font-size: 20px;
 }
 
-p {
+/* Descrição */
+.cardapio p {
+    margin-top: 5px;
+    margin-bottom: 6px;
+    color: #666;
     line-height: 1.5;
 }
 
-strong {
-    color: #d32f2f;
+/* Preço */
+.cardapio strong {
+    display: block;
+    margin-bottom: 15px;
+    color: #f4511e;
     font-size: 18px;
 }
 
-ul {
-    padding-left: 20px;
+/* Listas */
+.cardapio ul {
+    padding: 0;
+    margin: 10px 0 25px;
+    list-style: none;
 }
 
-li {
-    margin-bottom: 10px;
+.cardapio li {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background-color: #fff3ed;
+    border-left: 5px solid #f4511e;
+    border-radius: 6px;
+    color: #444;
 }
 
-table {
+/* Tabela */
+.cardapio table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-    background-color: white;
-}
-
-th {
-    background-color: #d32f2f;
-    color: white;
-    padding: 12px;
-}
-
-td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-
-button {
-    display: block;
-    margin: 30px auto;
-    padding: 14px 30px;
-    border: none;
+    overflow: hidden;
     border-radius: 8px;
-    background-color: #e65100;
+}
+
+.cardapio th {
+    background-color: #d32f2f;
     color: white;
-    font-size: 17px;
+    padding: 14px;
+    text-align: left;
+}
+
+.cardapio td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cardapio tr:nth-child(even) {
+    background-color: #fff3ed;
+}
+
+/* Botão */
+.cardapio button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #f4741e, #ff8800);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #d32f2f;
+.cardapio button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(211, 47, 47, 0.3);
 }
 
-footer {
-    background-color: #d32f2f;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+.aba {
+    padding: 1px 9px 1px 18px;
+    background-color: #fff3ed;
+    border-radius: 6px;
+    margin-top: 15px;
 }
 
-footer p {
-    margin: 5px;
+/* Responsividade */
+@media (max-width: 600px) {
+
+    .cardapio {
+        width: 95%;
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    .cardapio h2 {
+        font-size: 20px;
+    }
+
+    .cardapio h3 {
+        font-size: 18px;
+    }
+
+    .cardapio p {
+        font-size: 14px;
+    }
+
+    .cardapio strong {
+        font-size: 16px;
+    }
+
+    .cardapio th,
+    .cardapio td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+
+
 }
+
