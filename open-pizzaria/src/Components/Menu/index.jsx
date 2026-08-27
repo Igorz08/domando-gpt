@@ -18,6 +18,9 @@ const Menu = () => {
                 <li>
                     <Link to="/cardapio">Cardápio</Link>
                 </li>
+                <li>
+                    <Link to="/comentario">Comentários</Link>
+                </li>
 
                 <li>
                     <a href="#">Mais ▾</a>
