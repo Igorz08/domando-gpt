@@ -15,7 +15,7 @@ export default function index() {
 
   return (
         <main className="contentComentario">
-            
+
             <section className="containerComentario">
                 <article>
                     <img src="" alt="" />
