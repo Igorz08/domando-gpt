@@ -4,8 +4,16 @@
     { "id": "2", "title": "another title", "views": 200 }
   ],
   "comments": [
-    {"nome": "Lucas", "text": "mto bom"},
-    {"nome": "Sarah", "text": "comentario generico"}
+    {"nome": "Lucas Silva", "text": "Pizza maravilhosa! Massa muito boa.", "nota": 4.5},
+    {"nome": "Kevin Araujo", "text": "Uma das melhores pizzas que já comi!", "nota": 5},
+    {"nome": "Adamastor Figueiredo", "text": "Demorou um pouco, mas gostei, recomendo.", "nota": 4},
+    {"nome": "Luiz Inacio", "text": "Bom demais companheiro.", "nota": 5},
+    {"nome": "Ednaldo Pereira", "text": "Show de bola, adorei.", "nota": 5},
+    {"nome": "Sara Almeida", "text": "A pizza é boa.", "nota": 5},
+    {"nome": "Sarah Almeida", "text": "Top", "nota": 5},
+    {"nome": "Saraah Almeida", "text": "Top demais", "nota": 4.5},
+    {"nome": "Saarah Almeida", "text": "mto loko", "nota": 5},
+    {"nome": "Saaraah Almeida", "text": "to ficando sem ideia", "nota": 5}
   ],
   "profile": {
     "name": "typicode"

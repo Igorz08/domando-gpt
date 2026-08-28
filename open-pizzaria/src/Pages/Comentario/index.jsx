@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import estrela from "../../assets/estrela.png"
+import "./Comentario.css"
 
 export default function index() {
 
@@ -17,11 +19,25 @@ export default function index() {
         <main className="contentComentario">
 
             <section className="containerComentario">
-                <article>
-                    <img src="" alt="" />
-                    <strong></strong>
+                {comentarios.map((user) =>(
+                    <article key={user.id}>
+
+                    <img src={estrela}
+                    width={40}
+                    height={40}
+                    alt="Nota"
+                    />
+
+                    <strong>{Number(user.nota).toFixed(1)}</strong>
+
+                    <h4>{user.nome}</h4>
+                    <p>{user.text}</p>
                 </article>
+                ))}
+                
             </section>
         </main>
   )
 }
+
+// alt={`Foto de ${user.nome}`}
