@@ -1,7 +1,6 @@
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import Menu from "./Components/Menu";
-import Router from "./Router";
+import Header from "./src/Components/Header";
+import Footer from "./src/Components/Footer";
+import Router from "./src/Router";
 import "./Global.css";
 
 function App() {

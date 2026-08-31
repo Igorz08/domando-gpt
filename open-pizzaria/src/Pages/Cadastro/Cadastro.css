@@ -1,0 +1,201 @@
+.containerCadastro {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 20px;
+
+  box-sizing: border-box;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+/* Título */
+.containerCadastro h1 {
+  position: relative;
+
+  margin: 0 0 30px;
+
+  color: #d32f2f;
+
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Pequena linha abaixo do título */
+.containerCadastro h1::after {
+  content: "";
+
+  position: absolute;
+
+  width: 55px;
+  height: 4px;
+
+  left: 50%;
+  bottom: -10px;
+
+  transform: translateX(-50%);
+
+  border-radius: 10px;
+
+  background: #f4511e;
+}
+
+/* Card do formulário */
+.containerCadastro form {
+  width: 100%;
+  max-width: 600px;
+
+  padding: 35px;
+
+  box-sizing: border-box;
+
+  background: #fff;
+
+  border: 1px solid #eee;
+  border-radius: 12px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.07),
+    0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Cada campo */
+.form-control {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 20px;
+}
+
+.form-control:last-of-type {
+  margin-bottom: 25px;
+}
+
+/* Labels */
+.form-control label {
+  margin-bottom: 8px;
+
+  color: #333;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.form-control input {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 14px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #ddd;
+  border-radius: 7px;
+
+  background: #fafafa;
+
+  color: #333;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Input quando selecionado */
+.form-control input:focus {
+  border-color: #f4511e;
+
+  background: #fff;
+
+  box-shadow:
+    0 0 0 3px rgba(244, 81, 30, 0.12);
+}
+
+/* Placeholder */
+.form-control input::placeholder {
+  color: #aaa;
+}
+
+/* Botão */
+.botaoCadastro {
+  width: 100%;
+  height: 48px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: linear-gradient(
+    135deg,
+    #f4511e,
+    #d32f2f
+  );
+
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 12px rgba(211, 47, 47, 0.2);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+/* Hover do botão */
+.botaoCadastro:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 18px rgba(211, 47, 47, 0.28);
+
+  filter: brightness(1.05);
+}
+
+/* Clique */
+.botaoCadastro:active {
+  transform: translateY(0);
+
+  box-shadow:
+    0 3px 8px rgba(211, 47, 47, 0.2);
+}
+
+/* Acessibilidade */
+.botaoCadastro:focus-visible {
+  outline: 3px solid rgba(244, 81, 30, 0.25);
+  outline-offset: 3px;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+  .containerCadastro {
+    padding: 25px 15px;
+  }
+
+  .containerCadastro h1 {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  .containerCadastro form {
+    padding: 25px 20px;
+    border-radius: 10px;
+  }
+}
