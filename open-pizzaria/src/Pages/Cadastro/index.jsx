@@ -25,7 +25,40 @@ export default function Cadastro() {
       
       e.preventDefault()
 
-      console.log("Enviar.....")
+       if (formData.nome.trim() === "") {
+          alert("O campo Nome é obrigatório.")
+          return false;
+        }
+
+        if (formData.email.trim() === "") {
+          alert("O campo Email é obrigatório.")
+          return false;
+        }
+
+        if (formData.telefone.trim() === "") {
+          alert("O campo Telefone é obrigatório.")
+          return false;
+        }
+
+      // Enviando os dados para o backend com JSON
+      fetch("http://localhost:3000/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Usuário cadastrado com sucesso", data);
+        // Limpa o formularioapós o envio
+        setFormData({
+          nome: "",
+          email: "",
+          telefone: ""
+
+        })
+      })
     }
 
   return (
