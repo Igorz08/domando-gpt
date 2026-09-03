@@ -78,22 +78,10 @@
   },
   "users": [
     {
-      "nome": "João Silva",
-      "email": "joao@email.com",
-      "telefone": "11999990001",
-      "id": "KLNRWUZHVG4"
-    },
-    {
       "nome": "Maria Santos",
       "email": "maria@email.com",
       "telefone": "11999990002",
       "id": "6zLvavA3WL4"
-    },
-    {
-      "nome": "Pedro Oliveira",
-      "email": "pedro@email.com",
-      "telefone": "11999990003",
-      "id": "QfdAmUQNnh0"
     },
     {
       "nome": "Ana Souza",
@@ -154,54 +142,6 @@
       "email": "juliana@gmail.com",
       "telefone": "7487435686",
       "id": "i4MTGotbfFQ"
-    },
-    {
-      "nome": "",
-      "email": "",
-      "telefone": "",
-      "id": "_sJZti5XMy0"
-    },
-    {
-      "nome": "",
-      "email": "",
-      "telefone": "",
-      "id": "5I1lXEsu5os"
-    },
-    {
-      "nome": "",
-      "email": "",
-      "telefone": "",
-      "id": "XOOl_hFZ4Sw"
-    },
-    {
-      "nome": "",
-      "email": "",
-      "telefone": "",
-      "id": "T3TCJ8vRcoQ"
-    },
-    {
-      "nome": "",
-      "email": "",
-      "telefone": "",
-      "id": "x20ZdzIYY1s"
-    },
-    {
-      "nome": "",
-      "email": "",
-      "telefone": "",
-      "id": "TqHdmhMPlB8"
-    },
-    {
-      "nome": "",
-      "email": "",
-      "telefone": "",
-      "id": "-CBZ9SjgtgI"
-    },
-    {
-      "nome": "",
-      "email": "",
-      "telefone": "",
-      "id": "z64rqIVrY_U"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
